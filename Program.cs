@@ -1,6 +1,26 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 
+
+//int A = int.Parse(Console.ReadLine());
+//int B = int.Parse(Console.ReadLine());
+
+//int X = A + B;
+//Console.WriteLine($"X = {X}");
+
+Console.WriteLine("Coloque o Raio: ");
+float R = float.Parse(Console.ReadLine());
+float Area = (float)(Math.PI * Math.Pow(R,2));
+Console.WriteLine($"A = {Area}");
+
+
+
+
+
+
+
+
+
 ContaCorrente Conta = new ContaCorrente("Murilo", "123456", 500);
 ContaCorrente Conta1 = new ContaCorrente("leo", "654321", 700);
 ContaCorrente Conta2 = new ContaCorrente("Vini", "12344556", 1000);
@@ -9,8 +29,6 @@ ContaCorrente Conta4 = new ContaCorrente("rafa", "6876987", 900);
 
 Conta.deposito(500);
 Console.WriteLine($"Nome: {Conta.Nome}  Nº da conta: {Conta.NdaConta}   Saldo: {Conta.Saldo}");
-
-
 
 Carro carro1 = new Carro("Ford", "top", 2004, 160);
 Carro carro2 = new Carro("aaa", "aa", 2099, 180);
@@ -104,3 +122,4 @@ public class ContaCorrente
         this.Saldo = this.Saldo - sacar;
     }
 }
+
